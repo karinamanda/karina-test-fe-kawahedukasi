@@ -2,8 +2,8 @@
 <head>
 <script type="text/javascript">
 function validasi(){
-  var validasiHuruf = /^[a-zA-Z! ]+$/;
-  var input = document.getElementById("input");
+  let validasiHuruf = /^[a-zA-Z! ]+$/;
+  let input = document.getElementById("input");
   if (input.value.match(validasiHuruf)) {
       alert("Sistem memeriksa data anda valid dengan ketentuan kami dengan inputan " + input.value +" !");
   } else {
