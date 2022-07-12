@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+function validasi(){
+  var validasiHuruf = /^[a-zA-Z! ]+$/;
+  var input = document.getElementById("input");
+  if (input.value.match(validasiHuruf)) {
+      alert("Sistem memeriksa data anda valid dengan ketentuan kami dengan inputan " + input.value +" !");
+  } else {
+      alert("Sistem kami menolak untuk inputan berisi angka");
+      input.value="";
+      input.focus();
+      return false;
+  }
+}
+</script>
+</head>
+<body>
+
+Masukan input data : <br>
+<input type="text" id="input">
+<button onclick="validasi()"> cek </button>
+
+</body>
+</html>
